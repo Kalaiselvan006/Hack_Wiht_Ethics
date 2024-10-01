@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classical Ciphers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Classical Ciphers </h1>
+    <div>
+        <h2>Input</h2>
+        <textarea id="inputText" rows="4" placeholder="Enter text here"></textarea>
+        <br>
+        <label for="caesarShift">Caesar Shift:</label>
+        <input type="number" id="caesarShift" value="3">
+        <br>
+        <label for="vigenereKey">Vigenère Key:</label>
+        <input type="text" id="vigenereKey" placeholder="Enter Vigenère Key">
+        <br>
+        <label for="railFenceRails">Rail Fence Rails:</label>
+        <input type="number" id="railFenceRails" value="3">
+        <br>
+        <label for="columnarKey">Columnar Key:</label>
+        <input type="text" id="columnarKey" placeholder="Enter Columnar Key">
+        <br>
+        <label for="playfairKey">Playfair Key:</label>
+        <input type="text" id="playfairKey" placeholder="Enter Playfair Key">
+        <br>
+        <label for="affineA">Affine A:</label>
+        <input type="number" id="affineA" value="1">
+        <br>
+        <label for="affineB">Affine B:</label>
+        <input type="number" id="affineB" value="0">
+        <br>
+        <button onclick="encrypt()">Encrypt</button>
+        <button onclick="decrypt()">Decrypt</button>
+    </div>
+
+    <div id="results"></div>
+    <script src="script.js"></script>
+</body>
+</html>

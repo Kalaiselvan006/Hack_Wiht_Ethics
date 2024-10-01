@@ -1,0 +1,148 @@
+   
+* {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+
+  body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: radial-gradient(circle at center, #a1c4fd, #c2e9fb); /* New background */
+      color: #333;
+      min-height: 100vh; /* Ensure the body has a minimum height */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+  }
+
+  h1 {
+      color: #ffeb3b;
+      text-shadow: 2px 2px 4px #000;
+      margin-bottom: 20px;
+      animation: slideIn 0.5s ease-out;
+      font-size: 3em;
+  }
+
+  div {
+      background-color: #ffccff;
+      border-radius: 16px;
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.3);
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: transform 0.3s, background-color 0.3s;
+      width: 100%;
+      max-width: 800px;
+  }
+
+  div:hover {
+      transform: scale(1.05);
+      background-color: #ff99cc;
+  }
+
+  h2 {
+      color: #ff0066;
+      margin-top: 0;
+      text-shadow: 2px 2px 2px #333;
+      font-size: 1.8em;
+  }
+
+  textarea,
+  input[type="number"],
+  input[type="text"] {
+      width: 90%;
+      padding: 10px;
+      margin: 10px auto;
+      border-radius: 8px;
+      border: 2px solid #ff33cc;
+      font-size: 18px;
+      background-color: #fff0f5;
+      display: block;
+  }
+
+  textarea:focus,
+  input[type="number"]:focus,
+  input[type="text"]:focus {
+      border-color: #ff0066;
+      background-color: #ffe6f7;
+  }
+
+  button {
+      background-color: #ff0066;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.3s;
+      margin: 10px;
+  }
+
+  button:hover {
+      background-color: #ff3366;
+      transform: scale(1.1);
+  }
+
+  #results {
+      background-color: #ffccff;
+      border: 2px solid #ff99cc;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin-top: 20px;
+      max-width: 800px;
+      width: 100%;
+  }
+
+  p {
+      margin: 10px 0;
+      font-size: 1.2em;
+  }
+
+  strong {
+      color: #ff33cc;
+  }
+
+  @keyframes slideIn {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+  }
+   /* Media Queries for Responsiveness */
+   @media (max-width: 768px) {
+      h1 {
+          font-size: 2.2em; /* Slightly smaller font on mobile */
+      }
+
+      textarea, input[type="number"], input[type="text"], button {
+          font-size: 16px;
+      }
+
+      button {
+          padding: 10px;
+      }
+
+      div {
+          padding: 15px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      h1 {
+          font-size: 1.8em;
+      }
+
+      textarea, input[type="number"], input[type="text"], button {
+          font-size: 14px;
+      }
+
+      div {
+          padding: 10px;
+      }
+
+      button {
+          padding: 8px;
+      }
+  }
